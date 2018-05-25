@@ -1,0 +1,49 @@
+.stat-panel {
+  background-color: #FFFFFF;
+  border-radius: .8em;
+  box-shadow: 0 2px 4px 0 rgba(51, 51, 79, 0.1);
+  box-sizing: border-box;
+  margin-bottom: 2.4em;
+  padding: 2em;
+  position: relative;
+  min-height: 16em; }
+  .stat-panel__status {
+    color: #727272;
+    font-size: 1.8em;
+    position: absolute;
+    right: 1em;
+    top: 1em; }
+    .stat-panel__status--attention {
+      color: red;
+      display: flex;
+      align-content: center; }
+      .stat-panel__status--attention:before {
+        content: '\e002';
+        font-family: "Material Icons";
+        margin-right: .25em; }
+  .stat-panel__info {
+    display: flex;
+    position: relative;
+    z-index: 2; }
+  .stat-panel__icon {
+    align-self: top;
+    color: #B8C0C5;
+    margin-right: 2.4em; }
+  .stat-panel__heading {
+    color: #33334F;
+    font-size: 2.4em;
+    font-weight: 400;
+    margin: 0; }
+  .stat-panel__icon, .stat-panel__heading {
+    z-index: 2; }
+  .stat-panel__stat {
+    color: #004168;
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 2rem; }
+  .stat-panel__chart {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; }
