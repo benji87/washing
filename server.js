@@ -1,17 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const WebSocket = require('ws');
-const request = require('request');
 const MongoClient = require('mongodb').MongoClient;
 const mongoUrl = 'mongodb://localhost:27017/washing';
-
 const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/api/stats', (req, res) => {
-
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
     res.setHeader('Content-Type', 'application/json');

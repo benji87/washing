@@ -35,7 +35,7 @@ class StatPanel extends Component {
                         pointHoverBorderWidth: 2,
                         pointRadius: 0,
                         pointHitRadius: 10,
-                        data: [],
+                        data: []
                     }
                 ]
             }
@@ -139,7 +139,7 @@ class StatPanel extends Component {
                     case (sensorReading > 15):
                         sensorStatus = 'Attention';
                         break;
-                    case (sensorReading > 10 && sensorReading < 15):
+                    case (sensorReading > 13.5 && sensorReading < 15):
                         sensorStatus = 'Wash';
                         break;
                     default:
@@ -173,21 +173,30 @@ class StatPanel extends Component {
     render() {
         return (
             <div>
-                <div className="stat-panel">
-                    <div className={"stat-panel__status" + (this.state.sensorStatus === 'Attention' ? ' stat-panel__status--attention animated infinite flash' : '')}>{this.state.sensorStatus}</div>
-                    <div className="stat-panel__info">
-                        <div className="stat-panel__icon">
-                            <i className="material-icons md-48">{this.props.icon}</i>
+                {this.state.isReady ? (
+                    <div className="stat-panel">
+                        <div
+                            className={"stat-panel__status" + (this.state.sensorStatus === 'Attention' ? ' stat-panel__status--attention animated infinite flash' : '')}>{this.state.sensorStatus}</div>
+                        <div className="stat-panel__info">
+                            <div className="stat-panel__icon">
+                                <i className="material-icons md-48">{this.props.icon}</i>
+                            </div>
+                            <div className="stat-panel__content">
+                                <h3 className="stat-panel__heading">{this.props.title}</h3>
+                                <div
+                                    className="stat-panel__stat">{this.state.sensorValue}{this.props.unit_of_measurement}</div>
+                            </div>
                         </div>
-                        <div className="stat-panel__content">
-                            <h3 className="stat-panel__heading">{this.props.title}</h3>
-                            <div className="stat-panel__stat">{this.state.sensorValue}{this.props.unit_of_measurement}</div>
+                        <div className="stat-panel__chart">
+                            <LineChart chartData={this.state.chartData}/>
                         </div>
                     </div>
-                    <div className="stat-panel__chart">
-                        <LineChart chartData={this.state.chartData} />
+                ) : (
+                    <div className="stat-panel">
+                        <div className="stat-panel__loading">Loading panel&hellip;</div>
                     </div>
-                </div>
+                    )
+                }
             </div>
         )
     }
