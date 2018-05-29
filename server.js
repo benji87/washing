@@ -1,8 +1,10 @@
+const { WEBSOCKET_PASS, WEBSOCKET_URL, MONGODB_URL } = require('./constants');
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const WebSocket = require('ws');
 const MongoClient = require('mongodb').MongoClient;
-const mongoUrl = 'mongodb://localhost:27017/washing';
+const mongoUrl = MONGODB_URL;
 const app = express();
 
 app.use(bodyParser.json());
@@ -31,12 +33,12 @@ app.get('/api/stats', (req, res) => {
 
 app.listen(5000, () => console.log('Webhook server is listening, port 5000'));
 
-const ws = new WebSocket('ws://192.168.1.7:8123/api/websocket');
+const ws = new WebSocket(WEBSOCKET_URL);
 
 ws.on('open', function open() {
     console.log('open');
 
-    ws.send(JSON.stringify({type:'auth', api_password:'io659CJa4dPb98n5'}), function ack(error) {
+    ws.send(JSON.stringify({type:'auth', api_password:WEBSOCKET_PASS}), function ack(error) {
         if(error) {
             console.log("Error:" + error);
         }
