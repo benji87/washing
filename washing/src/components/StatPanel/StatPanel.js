@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import LineChart from '../LineChart/LineChart';
 import './StatPanel.css';
 
-const API = 'http://localhost:5000/api/stats?stat=';
+const API = process.env.REACT_APP_API_URL + 'stats?stat=';
+
 
 class StatPanel extends Component {
 
@@ -62,7 +63,6 @@ class StatPanel extends Component {
                         console.log('Looks like there was a problem. Status Code: ' + response.status);
                         return;
                     }
-                    console.log(response);
 
                     if(response.ok) {
                         response.json().then((result) => {
@@ -73,7 +73,7 @@ class StatPanel extends Component {
 
                             result.forEach((element) => {
 
-                                let label = " ";
+                                let label = new Date(element.timestamp);
                                 let value = element.state;
 
                                 labels.push(label);
@@ -136,10 +136,10 @@ class StatPanel extends Component {
             break;
             case 'energy':
                 switch (true) {
-                    case (sensorReading > 15):
+                    case (sensorReading > 16):
                         sensorStatus = 'Attention';
                         break;
-                    case (sensorReading > 13.5 && sensorReading < 15):
+                    case (sensorReading > 13.5 && sensorReading < 16):
                         sensorStatus = 'Wash';
                         break;
                     default:
@@ -153,10 +153,10 @@ class StatPanel extends Component {
                     case (sensorReading > 11):
                         sensorStatus = 'Attention';
                         break;
-                    case (sensorReading > 7 && sensorReading < 11):
-                        sensorStatus = 'Spin';
+                    case (sensorReading > 2.5 && sensorReading < 11):
+                        sensorStatus = 'Spinning';
                         break;
-                    case (sensorReading > 1 && sensorReading < 7):
+                    case (sensorReading > 1 && sensorReading < 2.5):
                         sensorStatus = 'Wash';
                         break;
                     default:
@@ -175,16 +175,16 @@ class StatPanel extends Component {
             <div>
                 {this.state.isReady ? (
                     <div className="stat-panel">
-                        <div
-                            className={"stat-panel__status" + (this.state.sensorStatus === 'Attention' ? ' stat-panel__status--attention animated infinite flash' : '')}>{this.state.sensorStatus}</div>
+                        {this.props.showStatus &&
+                        <div className={"stat-panel__status preloader" + (this.state.sensorStatus === 'Attention' ? ' stat-panel__status--attention animated infinite flash' : '')}>{this.state.sensorStatus}</div>
+                        }
                         <div className="stat-panel__info">
                             <div className="stat-panel__icon">
-                                <i className="material-icons md-48">{this.props.icon}</i>
+                                <i className="material-icons md-48 preloader">{this.props.icon}</i>
                             </div>
                             <div className="stat-panel__content">
-                                <h3 className="stat-panel__heading">{this.props.title}</h3>
-                                <div
-                                    className="stat-panel__stat">{this.state.sensorValue}{this.props.unit_of_measurement}</div>
+                                <h3 className="stat-panel__heading preloader">{this.props.title}</h3>
+                                <div className="stat-panel__stat preloader">{this.state.sensorValue}<span className="stat-panel__stat__measurement">{this.props.unit_of_measurement}</span></div>
                             </div>
                         </div>
                         <div className="stat-panel__chart">

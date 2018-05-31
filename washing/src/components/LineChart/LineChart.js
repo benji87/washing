@@ -11,11 +11,7 @@ let options = {
         display: false
     },
     tooltips: {
-        callbacks: {
-            label: function(tooltipItem) {
-                return tooltipItem.yLabel;
-            }
-        }
+        enabled: true
     },
     scales: {
         xAxes: [
@@ -55,7 +51,7 @@ class LineChart extends Component {
                 <Line
                     data={this.props.chartData}
                     options={options}
-                    height={66}
+                    height={60}
                 />
             </div>
         )

@@ -1,15 +1,31 @@
+html, body {
+  font-size: 8px; }
+  @media (min-width: 992px) {
+    html, body {
+      font-size: 9px; } }
+  @media (min-width: 1200px) {
+    html, body {
+      font-size: 10px; } }
+
 body {
   background-color: #F4F6F8;
-  font-family: "Sofia Pro", "Helvetica Neue", Arial, sans-serif;
-  font-size: 10px; }
+  font-family: "Sofia Pro", "Helvetica Neue", Arial, sans-serif; }
 
 h1 {
   color: #24353E;
-  font-size: 4.8em; }
+  font-size: 4.8em;
+  text-align: center; }
+  @media (min-width: 768px) {
+    h1 {
+      text-align: left; } }
 
 .app__title {
   display: flex;
   margin: 2em 0; }
+
+.app__connection {
+  margin-top: 10rem;
+  text-align: center; }
 
 .material-icons.md-18 {
   font-size: 18px; }
