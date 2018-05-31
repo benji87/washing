@@ -22,7 +22,10 @@ ws.on('open', function open() {
     ws.send(JSON.stringify({type:'auth', api_password:'io659CJa4dPb98n5'}), function ack(error) {
         console.log("Error:" + error);
     });
-    ws.send(JSON.stringify({'id': 18, type: 'subscribe_events', event_type: "state_changed"}), function ack(error) {
+    ws.send(JSON.stringify({'id': 18, type: 'subscribe_events', event_type: 'state_changed'}), function ack(error) {
+        console.log("Error:" + error);
+    });
+    ws.send(JSON.stringify({'id': 19, type: 'get_states'}), function ack(error) {
         console.log("Error:" + error);
     });
 });

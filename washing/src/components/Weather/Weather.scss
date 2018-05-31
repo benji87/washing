@@ -1,0 +1,21 @@
+@import "./styles/_variables.scss";
+
+.weather {
+  display: flex;
+  margin: $spacing-medium 0;
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &__content {
+    margin-left: $spacing-small;
+
+    &__tip {
+      font-size: $font-size-small;
+    }
+
+  }
+
+}

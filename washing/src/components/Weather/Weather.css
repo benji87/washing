@@ -1,0 +1,10 @@
+.weather {
+  display: flex;
+  margin: 2.4rem 0; }
+  .weather__icon {
+    width: 5rem;
+    height: 5rem; }
+  .weather__content {
+    margin-left: 1.6rem; }
+    .weather__content__tip {
+      font-size: 1.6rem; }
