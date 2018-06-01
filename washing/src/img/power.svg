@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="75.9846457%" x2="50%" y2="31.2726566%" id="linearGradient-1">
+            <stop stop-color="#C6D3F1" offset="0%"></stop>
+            <stop stop-color="#ECF0FA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M29.7229001,5.00727249 L14.0012303,26.9460378 L23.2296649,26.9460378 L18.6556735,41.9931228 L33.9967709,20.252131 L24.8943471,20.252131 L29.7229001,5.00727249 Z M33.9967709,18.2528959 C35.6454059,18.2528959 36.58574,20.1354694 35.5953018,21.4531967 L20.2542044,43.1941885 C18.9939824,44.8708492 16.3310143,43.7233318 16.6847073,41.6560326 L20.8589781,28.945273 L14.0012303,28.945273 C12.3463965,28.945273 11.4077783,27.0502303 12.4108086,25.7342584 L28.1324784,3.79549303 C29.4087298,2.12105623 32.0730496,3.30207611 31.6889423,5.37197593 L27.2990608,18.2528959 L33.9967709,18.2528959 Z" id="Path-3" fill="#2F60CE" fill-rule="nonzero"></path>
+        <polygon id="Path" fill="url(#linearGradient-1)" points="29.7229001 5.00727249 14.0012303 26.9460378 23.2296649 26.9460378 18.6556735 41.9931228 33.9967709 20.252131 24.8943471 20.252131"></polygon>
+        <rect id="Rectangle-6" fill="#1E3E84" x="2" y="22" width="6.9985811" height="1.99923515" rx="0.999617577"></rect>
+        <rect id="Rectangle-6" fill="#1E3E84" transform="translate(6.181208, 9.181208) rotate(-315.000000) translate(-6.181208, -9.181208) " x="2.68191789" y="8.18159087" width="6.9985811" height="1.99923515" rx="0.999617577"></rect>
+        <rect id="Rectangle-6" fill="#1E3E84" x="39" y="22" width="6.9985811" height="1.99923515" rx="0.999617577"></rect>
+        <rect id="Rectangle-6" fill="#1E3E84" transform="translate(6.181208, 37.181208) rotate(-45.000000) translate(-6.181208, -37.181208) " x="2.68191789" y="36.1815909" width="6.9985811" height="1.99923515" rx="0.999617577"></rect>
+        <rect id="Rectangle-6" fill="#1E3E84" transform="translate(42.181208, 37.181208) rotate(45.000000) translate(-42.181208, -37.181208) " x="38.6819179" y="36.1815909" width="6.9985811" height="1.99923515" rx="0.999617577"></rect>
+        <rect id="Rectangle-6" fill="#1E3E84" transform="translate(42.181208, 9.181208) rotate(-45.000000) translate(-42.181208, -9.181208) " x="38.6819179" y="8.18159087" width="6.9985811" height="1.99923515" rx="0.999617577"></rect>
+    </g>
+</svg>

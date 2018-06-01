@@ -1,4 +1,4 @@
-@import "./styles/_variables.scss";
+@import "./styles/_styles.scss";
 
 .stat-panel {
   background-color: $content-background;
@@ -8,7 +8,7 @@
   margin-bottom: $spacing-medium;
   padding: $spacing-medium;
   position: relative;
-  min-height: 16em;
+  min-height: 18em;
 
   &__status {
     color: $secondary-grey;
@@ -25,7 +25,7 @@
       &:before {
         content: '\e002';
         font-family: "Material Icons";
-        margin-right: .25em;
+        margin-right: $spacing-small/2;
       }
     }
 
@@ -43,13 +43,9 @@
 
   &__icon {
     align-self: top;
-    color: $icon-color;
     margin-right: $spacing-medium;
-
-    i {
-      width: 4.8rem;
-      height: 4.8rem;
-    }
+    width: 4.8rem;
+    height: 4.8rem;
   }
 
   &__content {
@@ -75,7 +71,7 @@
     flex-wrap: wrap;
     flex-grow: 1;
     font-size: $font-size-large;
-    font-weight: 600;
+    font-weight: 800;
     line-height: $spacing-large;
 
     &__measurement {
@@ -115,7 +111,7 @@
 
 .preloader {
   &:empty {
-    background: #EDEDED;
+    background: $light-grey;
     min-width: inherit;
     min-height: $spacing-medium;
     overflow: hidden;

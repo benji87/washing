@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="24.5362854%" y1="61.6998596%" x2="82.7311198%" y2="28.1337923%" id="linearGradient-1">
+            <stop stop-color="#C6D3F1" offset="0%"></stop>
+            <stop stop-color="#ECF0FA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12.9230769,5 C12.4132756,5 12,5.42475549 12,5.94871795 L12,41.0512821 C12,41.5752445 12.4132756,42 12.9230769,42 L35.0769231,42 C35.5867244,42 36,41.5752445 36,41.0512821 L36,5.94871795 C36,5.42475549 35.5867244,5 35.0769231,5 L12.9230769,5 Z M12,3 L36,3 C37.1045695,3 38,3.8954305 38,5 L38,42 C38,43.1045695 37.1045695,44 36,44 L12,44 C10.8954305,44 10,43.1045695 10,42 L10,5 C10,3.8954305 10.8954305,3 12,3 Z" id="Rectangle-4" fill="#2F60CE" fill-rule="nonzero"></path>
+        <rect id="Rectangle" fill="#2F60CE" x="10" y="11" width="28" height="2"></rect>
+        <rect id="Rectangle-3" fill="#1E3E84" x="5" y="8" width="2" height="30" rx="1"></rect>
+        <rect id="Rectangle-3" fill="#1E3E84" x="0" y="15" width="2" height="17" rx="1"></rect>
+        <rect id="Rectangle-3" fill="#1E3E84" x="41" y="8" width="2" height="30" rx="1"></rect>
+        <rect id="Rectangle-3" fill="#1E3E84" x="46" y="15" width="2" height="17" rx="1"></rect>
+        <path d="M15.0000948,33.958418 C15.0000316,33.9445059 15,33.9305863 15,33.9166593 C15,28.9460965 19.0294373,24.9166593 24,24.9166593 C28.9705627,24.9166593 33,28.9460965 33,33.9166593 C33,33.9305275 32.9999686,33.9443885 32.999906,33.958242 C30.0785925,31.2361025 27.0786239,31.2361317 24,33.9583296 C20.9213764,36.6805273 17.921408,36.6805568 15.0000948,33.958418 Z M32.9998572,33.9678983 C32.9995379,34.0251809 32.9986834,34.0823368 32.9972985,34.1393612 L32.9998572,33.9678983 Z" id="Combined-Shape" fill="url(#linearGradient-1)" transform="translate(24.000000, 30.458330) rotate(-180.000000) translate(-24.000000, -30.458330) "></path>
+        <path d="M24,34 C27.8659932,34 31,30.8659932 31,27 C31,23.1340068 27.8659932,20 24,20 C20.1340068,20 17,23.1340068 17,27 C17,30.8659932 20.1340068,34 24,34 Z M24,36 C19.0294373,36 15,31.9705627 15,27 C15,22.0294373 19.0294373,18 24,18 C28.9705627,18 33,22.0294373 33,27 C33,31.9705627 28.9705627,36 24,36 Z" id="Oval" fill="#2F60CE" fill-rule="nonzero"></path>
+        <rect id="Rectangle-5" fill="#1E3E84" x="14" y="7" width="8" height="2" rx="1"></rect>
+        <circle id="Oval-3" fill="#1E3E84" cx="29" cy="8" r="1"></circle>
+        <circle id="Oval-3" fill="#1E3E84" cx="33" cy="8" r="1"></circle>
+    </g>
+</svg>

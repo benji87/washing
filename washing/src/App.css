@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("/fonts/hkgrotesk-regular-webfont.woff") format("woff"), url("/fonts/hkgrotesk-regular-webfont.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("/fonts/hkgrotesk-medium-webfont.woff") format("woff"), url("/fonts/hkgrotesk-medium-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("/fonts/hkgrotesk-semibold-webfont.woff") format("woff"), url("/fonts/hkgrotesk-semibold-webfont.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("/fonts/hkgrotesk-bold-webfont.woff") format("woff"), url("/fonts/hkgrotesk-bold-webfont.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal; }
+
 html, body {
   font-size: 8px; }
   @media (min-width: 992px) {
@@ -9,32 +33,23 @@ html, body {
 
 body {
   background-color: #F4F6F8;
-  font-family: "Sofia Pro", "Helvetica Neue", Arial, sans-serif; }
+  font-family: "HK Grotesk", "Helvetica Neue", Arial, sans-serif; }
 
 h1 {
   color: #24353E;
-  font-size: 4.8em;
+  font-size: 4.8rem;
   text-align: center; }
   @media (min-width: 768px) {
     h1 {
       text-align: left; } }
 
+.app__header {
+  margin-bottom: 2.4rem; }
+
 .app__title {
   display: flex;
-  margin: 2em 0; }
+  margin: 2.4rem 0; }
 
 .app__connection {
   margin-top: 10rem;
   text-align: center; }
-
-.material-icons.md-18 {
-  font-size: 18px; }
-
-.material-icons.md-24 {
-  font-size: 24px; }
-
-.material-icons.md-36 {
-  font-size: 36px; }
-
-.material-icons.md-48 {
-  font-size: 48px; }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="81.2948691%" x2="50%" y2="37.2070312%" id="linearGradient-1">
+            <stop stop-color="#C6D3F1" offset="0%"></stop>
+            <stop stop-color="#ECF0FA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M27.8874808,29.1775662 L27,28.5835053 L27,8 C27,6.34314575 25.6568542,5 24,5 C22.3431458,5 21,6.34314575 21,8 L21,28.5835053 L20.1125192,29.1775662 C18.1810972,30.4704192 17,32.6334908 17,35 C17,38.8659932 20.1340068,42 24,42 C27.8659932,42 31,38.8659932 31,35 C31,32.6334908 29.8189028,30.4704192 27.8874808,29.1775662 Z M33,35 C33,39.9705627 28.9705627,44 24,44 C19.0294373,44 15,39.9705627 15,35 C15,31.8795839 16.5880285,29.1300717 19,27.515549 L19,8 C19,5.23857625 21.2385763,3 24,3 C26.7614237,3 29,5.23857625 29,8 L29,27.515549 C31.4119715,29.1300717 33,31.8795839 33,35 Z" id="Combined-Shape" fill="#2F60CE" fill-rule="nonzero"></path>
+        <rect id="Rectangle-7" fill="#1E3E84" x="34" y="10" width="8" height="2" rx="1"></rect>
+        <rect id="Rectangle-7" fill="#1E3E84" x="34" y="16" width="8" height="2" rx="1"></rect>
+        <rect id="Rectangle-7" fill="#1E3E84" x="34" y="22" width="8" height="2" rx="1"></rect>
+        <path d="M27.8874808,29.1775662 L27,28.5835053 L27,8 C27,6.34314575 25.6568542,5 24,5 C22.3431458,5 21,6.34314575 21,8 L21,28.5835053 L20.1125192,29.1775662 C18.1810972,30.4704192 17,32.6334908 17,35 C17,38.8659932 20.1340068,42 24,42 C27.8659932,42 31,38.8659932 31,35 C31,32.6334908 29.8189028,30.4704192 27.8874808,29.1775662 Z" id="Path" fill="url(#linearGradient-1)"></path>
+        <path d="M23,31.1260175 L23,11 C23,10.4477153 23.4477153,10 24,10 C24.5522847,10 25,10.4477153 25,11 L25,31.1260175 C26.7252272,31.5700603 28,33.1361606 28,35 C28,37.209139 26.209139,39 24,39 C21.790861,39 20,37.209139 20,35 C20,33.1361606 21.2747728,31.5700603 23,31.1260175 Z" id="Combined-Shape" fill="#1E3E84"></path>
+        <circle id="Oval-2" fill="#FFFFFF" cx="24" cy="35" r="2"></circle>
+    </g>
+</svg>

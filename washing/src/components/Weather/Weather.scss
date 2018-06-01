@@ -1,8 +1,7 @@
-@import "./styles/_variables.scss";
+@import "./styles/_styles.scss";
 
 .weather {
   display: flex;
-  margin: $spacing-medium 0;
 
   &__icon {
     width: 5rem;
@@ -11,6 +10,10 @@
 
   &__content {
     margin-left: $spacing-small;
+
+    &__heading {
+      margin: 0;
+    }
 
     &__tip {
       font-size: $font-size-small;

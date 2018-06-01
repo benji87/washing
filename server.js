@@ -171,6 +171,8 @@ const connect = () => {
 
                 if(response.event.data.new_state.attributes.friendly_name.includes(weatherIdentifier)) {
 
+                    console.log(response);
+
                     let entity = response.event.data.entity_id.split('.');
                     let state = response.event.data.new_state.state;
                     let timestamp = response.event.time_fired;

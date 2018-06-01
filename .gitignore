@@ -4,3 +4,4 @@ washing/node_modules
 yarn-error.log
 .idea/*
 constants.js
+.DS_Store
