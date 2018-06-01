@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import LineChart from '../LineChart/LineChart';
 import './StatPanel.css';
+import VibrationIcon from '../../img/vibration.svg';
+import PowerIcon from '../../img/power.svg';
+import TemperatureIcon from '../../img/temperature.svg';
 
 const API = process.env.REACT_APP_API_URL + 'stats?stat=';
-
 
 class StatPanel extends Component {
 
@@ -29,10 +31,10 @@ class StatPanel extends Component {
                         borderJoinStyle: 'miter',
                         pointBorderColor: 'rgba(75,192,192,1)',
                         pointBackgroundColor: '#fff',
-                        pointBorderWidth: 4,
-                        pointHoverRadius: 2,
-                        pointHoverBackgroundColor: 'rgba(75,192,192,1)',
-                        pointHoverBorderColor: 'rgba(220,220,220,1)',
+                        pointBorderWidth: 6,
+                        pointHoverRadius: 4,
+                        pointHoverBackgroundColor: 'rgba(47,96,206,1)',
+                        pointHoverBorderColor: 'rgba(255,255,255,1)',
                         pointHoverBorderWidth: 2,
                         pointRadius: 0,
                         pointHitRadius: 10,
@@ -43,6 +45,7 @@ class StatPanel extends Component {
         };
         this.fetchChartData = this.fetchChartData.bind(this);
         this.updateSensorStatus = this.updateSensorStatus.bind(this);
+        this.handleIcon = this.handleIcon.bind(this);
     }
 
     componentDidMount() {
@@ -76,7 +79,7 @@ class StatPanel extends Component {
                                 let label = new Date(element.timestamp);
                                 let value = element.state;
 
-                                labels.push(label);
+                                labels.unshift(label);
                                 data.unshift(value);
                                 itemsProcessed++;
 
@@ -165,12 +168,33 @@ class StatPanel extends Component {
                 }
                 this.setState({sensorStatus: sensorStatus});
             break;
-
             // no default
         }
     }
 
+    handleIcon() {
+
+        let icon;
+
+        switch(this.props.icon) {
+            case 'power':
+                icon = PowerIcon;
+                break;
+            case 'vibration':
+                icon = VibrationIcon;
+                break;
+            case 'temperature':
+                icon = TemperatureIcon;
+                break;
+            default:
+                icon = PowerIcon;
+        }
+
+        return icon;
+    }
+
     render() {
+
         return (
             <div>
                 {this.state.isReady ? (
@@ -179,9 +203,7 @@ class StatPanel extends Component {
                         <div className={"stat-panel__status preloader" + (this.state.sensorStatus === 'Attention' ? ' stat-panel__status--attention animated infinite flash' : '')}>{this.state.sensorStatus}</div>
                         }
                         <div className="stat-panel__info">
-                            <div className="stat-panel__icon">
-                                <i className="material-icons md-48 preloader">{this.props.icon}</i>
-                            </div>
+                            <img src={this.handleIcon()} alt="Icon" className="stat-panel__icon" />
                             <div className="stat-panel__content">
                                 <h3 className="stat-panel__heading preloader">{this.props.title}</h3>
                                 <div className="stat-panel__stat preloader">{this.state.sensorValue}<span className="stat-panel__stat__measurement">{this.props.unit_of_measurement}</span></div>

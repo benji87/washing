@@ -51,7 +51,7 @@ class LineChart extends Component {
                 <Line
                     data={this.props.chartData}
                     options={options}
-                    height={60}
+                    height={70}
                 />
             </div>
         )

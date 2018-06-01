@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Weather.css';
 
 const API = process.env.REACT_APP_API_URL;
+const WEATHER_API = 'https://api.met.no/weatherapi/weathericon/1.1?';
 
 class Weather extends Component {
     constructor(props) {
@@ -54,7 +55,6 @@ class Weather extends Component {
     updateWeatherStatus() {
 
         const weatherIcon = parseInt(this.state.symbol, 10);
-        console.log(weatherIcon);
         // Symbol values obtained from https://api.met.no/weatherapi/weathericon/1.1/documentation
         const good = [1,2,3];
         const ok = [4,5,6,7,8,40];
@@ -62,11 +62,11 @@ class Weather extends Component {
         let hangoutText;
 
         if (good.includes(weatherIcon)) {
-            hangoutText = 'Forecast looks good to hang out your washing.';
+            hangoutText = 'Forecast looks good to hang your washing out.';
         } else if (ok.includes(weatherIcon)) {
-            hangoutText = 'It looks okay to hang out the washing but be prepared!';
+            hangoutText = 'It looks okay to hang the washing out, but be prepared!';
         } else {
-            hangoutText = "Don't hang out the washing at the moment. ";
+            hangoutText = "Don't hang the washing out at the moment. ";
         }
 
         this.setState({
@@ -77,7 +77,7 @@ class Weather extends Component {
 
     render() {
 
-        const weatherIcon = `https://api.met.no/weatherapi/weathericon/1.1?symbol=${ this.state.symbol }&content_type=image%2Fsvg`;
+        const weatherIcon = `${ WEATHER_API }symbol=${ this.state.symbol }&content_type=image%2Fsvg`;
 
         return (
             <div>
@@ -87,7 +87,7 @@ class Weather extends Component {
                         <img src={weatherIcon} alt="Weather Icon" className="weather__icon"/>
                     </div>
                     <div className="weather__content">
-                        <h3>Weather Forecast</h3>
+                        <h3 className="weather__content__heading">Weather forecast</h3>
                         <p className="weather__content__tip">{this.state.hangoutText}</p>
                     </div>
 

@@ -1,4 +1,4 @@
-@import "styles/_variables.scss";
+@import "styles/_styles.scss";
 
 html, body {
   font-size: 8px;
@@ -15,12 +15,12 @@ html, body {
 
 body {
   background-color: $background-color;
-  font-family: "Sofia Pro", "Helvetica Neue", Arial, sans-serif;
+  font-family: "HK Grotesk", "Helvetica Neue", Arial, sans-serif;
 }
 
 h1 {
   color: $primary-color;
-  font-size: 4.8em;
+  font-size: $font-size-large;
   text-align: center;
 
   @include breakpoint(small) {
@@ -30,9 +30,13 @@ h1 {
 
 .app {
 
+  &__header {
+    margin-bottom: $spacing-medium;
+  }
+
   &__title {
     display: flex;
-    margin: 2em 0;
+    margin: $spacing-medium 0;
   }
 
   &__connection {
@@ -41,19 +45,3 @@ h1 {
   }
 
 }
-
-.material-icons {
-  &.md-18 {
-    font-size: 18px;
-  }
-  &.md-24 {
-    font-size: 24px;
-  }
-  &.md-36 {
-    font-size: 36px;
-  }
-  &.md-48 {
-    font-size: 48px;
-  }
-}
-

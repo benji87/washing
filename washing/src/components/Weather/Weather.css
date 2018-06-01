@@ -1,10 +1,35 @@
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("/fonts/hkgrotesk-regular-webfont.woff") format("woff"), url("/fonts/hkgrotesk-regular-webfont.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("/fonts/hkgrotesk-medium-webfont.woff") format("woff"), url("/fonts/hkgrotesk-medium-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("/fonts/hkgrotesk-semibold-webfont.woff") format("woff"), url("/fonts/hkgrotesk-semibold-webfont.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("/fonts/hkgrotesk-bold-webfont.woff") format("woff"), url("/fonts/hkgrotesk-bold-webfont.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal; }
+
 .weather {
-  display: flex;
-  margin: 2.4rem 0; }
+  display: flex; }
   .weather__icon {
     width: 5rem;
     height: 5rem; }
   .weather__content {
     margin-left: 1.6rem; }
+    .weather__content__heading {
+      margin: 0; }
     .weather__content__tip {
       font-size: 1.6rem; }
