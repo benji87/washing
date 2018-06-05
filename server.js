@@ -10,7 +10,7 @@ const path = require('path');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use( express.static( `${__dirname}/../build` ) );
+app.use( express.static( `${__dirname}/washing/build` ) );
 
 app.get('/api/stats', (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
@@ -69,8 +69,8 @@ app.get('/api/weather', (req, res) => {
 
 });
 
-app.get('*', (req, res)=>{
-    res.sendFile(path.join(__dirname, '../build/index.html'));
+app.get('/', (req, res)=>{
+    res.sendFile(path.join(__dirname, '/washing/build/index.html', 'index.html'));
 });
 
 app.listen(5000, () => console.log('Webhook server is listening, port 5000'));
