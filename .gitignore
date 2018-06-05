@@ -1,5 +1,6 @@
 node_modules
 washing/node_modules
+washing/build
 .env
 yarn-error.log
 .idea/*
