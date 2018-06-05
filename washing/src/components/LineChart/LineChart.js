@@ -6,7 +6,7 @@ defaults.global.showLines = false;
 defaults.global.response = true;
 defaults.global.maintainAspectRatio = false;
 
-let options = {
+const options = {
     legend: {
         display: false
     },
