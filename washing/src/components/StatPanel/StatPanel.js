@@ -136,7 +136,6 @@ class StatPanel extends Component {
                         sensorStatus = 'Idle';
                         break;
                 }
-                this.setState({sensorStatus: sensorStatus});
             break;
             case 'energy':
                 switch (true) {
@@ -150,7 +149,6 @@ class StatPanel extends Component {
                         sensorStatus = 'Idle';
                         break;
                 }
-                this.setState({sensorStatus: sensorStatus});
             break;
             case 'vibration':
                 switch (true) {
@@ -167,10 +165,11 @@ class StatPanel extends Component {
                         sensorStatus = 'Idle';
                         break;
                 }
-                this.setState({sensorStatus: sensorStatus});
             break;
             // no default
         }
+
+        this.setState({sensorStatus: sensorStatus});
     }
 
     handleIcon() {
