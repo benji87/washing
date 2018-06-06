@@ -44,10 +44,8 @@ class Weather extends Component {
                                 this.updateWeatherStatus();
                             });
                         });
-
                     }
                 }
-
             )
             .catch((err) => {
                 console.log('Fetch Error :-S', err);
