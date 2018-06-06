@@ -40,9 +40,11 @@ class Weather extends Component {
                                 cloudiness: data[0].cloudiness,
                                 symbol: data[0].symbol,
                                 isReady: true
+                            }, () => {
+                                this.updateWeatherStatus();
                             });
                         });
-                        this.updateWeatherStatus();
+
                     }
                 }
 

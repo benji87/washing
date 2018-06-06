@@ -100,8 +100,9 @@ class StatPanel extends Component {
                                         }
                                     ]
                                 }
+                            }, () => {
+                                this.updateSensorStatus();
                             });
-                            this.updateSensorStatus();
                         });
                     }
                 }
