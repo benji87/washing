@@ -150,7 +150,7 @@ const connect = () => {
             const device = 'washing';
             const weatherIdentifier = 'yr';
 
-            if (typeof response.event.data.new_state.attributes.friendly_name !== 'undefined') {
+            if (typeof response.event.data.new_state.attributes !== null && typeof response.event.data.new_state.attributes.friendly_name !== 'undefined') {
 
                 if(response.event.data.new_state.attributes.friendly_name.includes(device)) {
 
